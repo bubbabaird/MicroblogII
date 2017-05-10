@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<form action="/logout" method="post">
+    <!-- changed button to input, why did Ben need to do that? -->
+    <input type="submit" value="Logout" />
+</form>
+Hello {{name}}!
+<form action="/create-message" method="post">
+    <input type="text" placeholder="Enter your message" name="message-text"/>
+    <button type="submit">Send</button>
+</form>
+
+Here are your messages:
+    {{#notes}}<p>{{text}}</p>{{/notes}}
+
+</body>
+</html>
